@@ -1,0 +1,11 @@
+{
+  "scopeName": "property-names.injection",
+  "injectionSelector": "L:meta.property-list.scss",
+  "patterns": [{ "include": "#property-names" }],
+  "repository": {
+    "property-names": {
+      "match": "(?xi)(?<![$\\w-])(?:content|cursor|filter|font|mask)(?=\\s*:)(?![^'\";}]+(\\[|{))",
+      "name": "meta.property-name.scss"
+    }
+  }
+}

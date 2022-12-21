@@ -1,0 +1,26 @@
+{
+  "name": "vscode-scss-syntax",
+  "displayName": "SCSS Syntax",
+  "description": "Fixes incorrect syntax highlighting for SCSS property names overlapping with tag names.",
+  "publisher": "LRDN",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrdn/vscode-scss-syntax.git"
+  },
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "property-names.injection",
+        "path": "./syntaxes/injection.json",
+        "injectTo": [
+          "source.css.scss"
+        ]
+      }
+    ]
+  }
+}
